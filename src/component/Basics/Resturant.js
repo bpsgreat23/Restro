@@ -46,7 +46,7 @@ const Resturant = () => {
     ];
     //  Below useState is used for not repeating the buttons
     // Important :- First use variable in useState then define it like below;
-    const [menuList,setMenuList] = useState(uniqueList);
+    const [menuList] = useState(uniqueList);
     // [] is for making object entities into array 
     // it is only showing objects but we have to make these entries into array and 
     // we have use new Set(S should be capital) so that elements in category dont repeat themselves
