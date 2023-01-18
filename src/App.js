@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Resturant from './component/Basics/Resturant'
+// import {Resturant} from './component/Basics/Resturant' in case of not using default
 
-function App() {
+// Important Notes:-
+// 1. className should be used instead of class
+// 2. If default is not used then we have to use Resturant in curly braces
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Resturant /> 
+    </>
+  )
 }
+// function hond(){
+//   return <h1> hello world </h1>
+// }
 
-export default App;
+// const Fung = () => {
+//   return <h1>My name is Bhanu Pratap Singh</h1>
+// }
+
+
+// const App = () => {
+//   return React.createElement(h1,{}, "hello world");
+//   // There will be error showing h1 is not defined as we have to use import react
+// }
+
+
+
+// If we dont want to use another function then we have to use this method -->
+
+// const App = () => {
+//   return React.createElement(
+//     "div",{},React.createElement("h1",{},"hello world")
+//   )
+// }
+
+
+
+export default App
